@@ -1,9 +1,9 @@
 # Usa l'immagine ufficiale di steamCMD come base
 FROM cm2network/steamcmd
 # avvio steamCMD e installo 7dtd 
-WORKDIR /home/steam/steamcmd/
+
 RUN <<EOF
 mkdir /home/steam/games
 mkdir /home/steam/saves
-steamcmd.sh +force_install_dir ../games/7dtd +login anonymous +app_update 294420 +quit
+/home/steam/steamcmd/steamcmd.sh +force_install_dir ../games/7dtd +login anonymous +app_update 294420 +quit
 EOF
