@@ -1,0 +1,9 @@
+services:
+  steam:
+    build:
+      context: ./docker/install
+    container_name: steam
+    volumes: -steam_data:/home/steam
+
+volumes:
+  steam_data:
