@@ -1,5 +1,5 @@
 services:
-  steam:
+  steamContainer:
     build:
       context: ./docker/install
     container_name: steam
